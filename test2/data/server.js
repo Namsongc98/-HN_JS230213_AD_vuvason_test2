@@ -1,6 +1,7 @@
 const express = require("express");
 const server = express();
 
+const cors = require("cors");
 
 const bodyParser = require("body-parser");
 
@@ -9,7 +10,7 @@ const connectMysql = require("mysql");
 const validaterTitle = require("./mildware");
 
 server.use(express.json());
-
+server.use(cors())
 server.use(express.urlencoded({ extended: true }));
 
 const connect = connectMysql.createConnection({
@@ -36,6 +37,7 @@ server.get("/api/v1/notekeeper", (req, res) => {
         error: err,
       });
     } else {
+     
       return res.status(200).json({
         status: "thành công",
         data: result,

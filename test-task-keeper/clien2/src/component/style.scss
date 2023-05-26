@@ -1,0 +1,81 @@
+.wp-input {
+  height: 50px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  .input-name {
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #3333;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .acom{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-right: 1px solid #333;
+        background-color: #f4f5f7;
+
+    }
+    input {
+      outline: none;
+      border: none;
+      height: 20px;
+    }
+  }
+  .select{
+    width: 200px;
+    height: 20px;
+    outline: none;
+  }
+  .post{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #4285f4;
+    color: white;
+  }
+}
+.table-wp {
+  margin: 10px 30px;
+  .tableconten {
+    width: 1200px;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .Update {
+    width: 80px;
+    height: 25px;
+    background-color: #177a48;
+    border-radius: 4px;
+    color: white;
+    border: none;
+  }
+  .Delete {
+    width: 80px;
+    height: 25px;
+    background-color: #d52835;
+    border-radius: 4px;
+    color: white;
+    border: none;
+  }
+}
